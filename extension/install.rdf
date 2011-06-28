@@ -5,9 +5,9 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="menu@overclockers.com.au"
                    em:name="Overclockers.com.au Menu"
-                   em:version="0.1.0.8"
+                   em:version="1.0.1"
                    em:creator="Hell Fire"
-                   em:description="Forum Menu in your Menubar, Govern'r?"
+                   em:description="OCAU Forums Menu"
                    em:homepageURL="http://forums.overclockers.com.au/showthread.php?t=440644"
                    em:updateURL="http://servfire.net/ocau/ocaumenu-update.php"
                    em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA/yiciYxE0jf3N1e0WNMdx314VZhrKFQhjKsRrDmXWiR8qx+xA2WsyKDyv/n7BJx+Ip9sKg4UnDs1/mfFhGgFpNmOfjnC3poQ0D0B4ATryxVXxtfYtTtvQwYVNV4w27Q+WPWulAkI/+RLFARjJhnRFE7uigGAkCeny7HNyL7u7wIDAQAB">
@@ -19,5 +19,5 @@
   <RDF:Description RDF:about="rdf:#$7z9Ul2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.5"
-                   em:maxVersion="3.*" />
+                   em:maxVersion="10.*" />
 </RDF:RDF>
