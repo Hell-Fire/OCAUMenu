@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://ocaumenu/content/button.css" type="text/css"?>
 <overlay id="ocau-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<script src="chrome://ocaumenu/content/overlay.js"/>
 	<menubar id="main-menubar">
@@ -9,4 +10,16 @@
 			</menupopup>
 		</menu>
 	</menubar>
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton
+				label="OCAU"
+				id="ocau-button"
+				type="menu"
+				insertbefore="print-button"
+				class="toolbarbutton-1 chromeclass-toolbar-additional ocau-button">			
+			<menupopup>
+				<menuitem label="Error with menu generation script"/>
+			</menupopup>
+		</toolbarbutton>
+	</toolbarpalette>
 </overlay>
