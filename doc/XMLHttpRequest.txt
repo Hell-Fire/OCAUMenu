@@ -1,0 +1,37 @@
+From mazzanet iiNet usage extension:
+
+ try {
+  var httpRequest = new XMLHttpRequest();
+ } catch (e) {
+  alert('Connection error!');
+  return;
+ }
+
+ try {
+  var txt = "?1";
+  for(var i in this.parms) {
+   txt = txt+'&'+this.parms[i].name+'='+this.parms[i].value;
+  }
+  httpRequest.open("POST", targetURL+txt, false, null, null);	
+  httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+  httpRequest.send('');
+ } catch (e) {
+  alert('iiMeter Error: '+e);
+  return false;
+ } 
+
+ switch(httpRequest.readyState) {
+  case 1,2,3:
+   alert('Bad Ready State: '+httpRequest.status);
+   return false;
+   break;
+  case 4:
+   if(httpRequest.status !=200) {
+    alert('The server respond with a bad status code: '+httpRequest.status);
+    return false;
+   } else {
+   var response = "";
+   response = httpRequest.responseText;
+   }
+   break;
+ }

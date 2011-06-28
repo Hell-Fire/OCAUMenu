@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="menu@overclockers.com.au"
+                   em:name="Overclockers.com.au Menu"
+                   em:version="0.1.0.8"
+                   em:creator="Hell Fire"
+                   em:description="Forum Menu in your Menubar, Govern'r?"
+                   em:homepageURL="http://forums.overclockers.com.au/showthread.php?t=440644"
+                   em:updateURL="http://servfire.net/ocau/ocaumenu-update.php"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA/yiciYxE0jf3N1e0WNMdx314VZhrKFQhjKsRrDmXWiR8qx+xA2WsyKDyv/n7BJx+Ip9sKg4UnDs1/mfFhGgFpNmOfjnC3poQ0D0B4ATryxVXxtfYtTtvQwYVNV4w27Q+WPWulAkI/+RLFARjJhnRFE7uigGAkCeny7HNyL7u7wIDAQAB">
+    <em:targetApplication RDF:resource="rdf:#$7z9Ul2"/>
+    <em:file RDF:resource="urn:mozilla:extension:file:"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:file:"
+                   em:package="content/" />
+  <RDF:Description RDF:about="rdf:#$7z9Ul2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.*" />
+</RDF:RDF>

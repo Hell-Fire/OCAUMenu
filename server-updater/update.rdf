@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+				 xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+	<RDF:Description RDF:about="urn:mozilla:extension:menu@overclockers.com.au">
+		<em:updates>
+			<RDF:Seq>
+				<RDF:li>
+					<RDF:Description>
+						<em:version>0.1.0.8</em:version>
+						<em:targetApplication>
+							<RDF:Description>
+								<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+								<em:minVersion>1.5</em:minVersion>
+								<em:maxVersion>3.0.*</em:maxVersion>
+
+								<em:updateLink>http://servfire.net/ocau/ocaumenu-0.1.0.8.xpi</em:updateLink>
+								<em:updateHash>sha1:363F3E3065D8CA0E8825003404E97CA93FB4034F</em:updateHash>
+							</RDF:Description>
+						</em:targetApplication>
+					</RDF:Description>
+				</RDF:li>
+			</RDF:Seq>
+		</em:updates>
+		<em:signature>MIGTMA0GCSqGSIb3DQEBDQUAA4GBAIQII8uOQTP8mPmKl55nKnvKd/ZweL/OhhozC9J1A8ZxyFeXVN5TpeYAHlghz5lTrq5L1Mf/xiG2nxUQLSWmq1E2z4FiqydtBCmmjf0KMkNxFm2cg8hJeU3X2CdHy2UDZW0vMFbebphBf6hGg2O9WGAyzNcscLO9O/f3+ToOUby8</em:signature>
+	</RDF:Description>
+</RDF:RDF>
