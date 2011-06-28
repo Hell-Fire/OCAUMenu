@@ -9,6 +9,7 @@
                    em:creator="Hell Fire"
                    em:description="OCAU Forums Menu"
                    em:homepageURL="http://forums.overclockers.com.au/showthread.php?t=440644"
+                   em:iconURL="chrome://ocaumenu/content/icon.png"
                    em:updateURL="http://servfire.net/ocau/ocaumenu-update.php"
                    em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA/yiciYxE0jf3N1e0WNMdx314VZhrKFQhjKsRrDmXWiR8qx+xA2WsyKDyv/n7BJx+Ip9sKg4UnDs1/mfFhGgFpNmOfjnC3poQ0D0B4ATryxVXxtfYtTtvQwYVNV4w27Q+WPWulAkI/+RLFARjJhnRFE7uigGAkCeny7HNyL7u7wIDAQAB">
     <em:targetApplication RDF:resource="rdf:#$7z9Ul2"/>
