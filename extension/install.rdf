@@ -10,15 +10,15 @@
                    em:description="OCAU Forums Menu"
                    em:homepageURL="http://forums.overclockers.com.au/showthread.php?t=440644"
                    em:iconURL="chrome://ocaumenu/content/icon.png"
-                   em:updateURL="http://servfire.net/ocau/ocaumenu-update.php"
-                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA/yiciYxE0jf3N1e0WNMdx314VZhrKFQhjKsRrDmXWiR8qx+xA2WsyKDyv/n7BJx+Ip9sKg4UnDs1/mfFhGgFpNmOfjnC3poQ0D0B4ATryxVXxtfYtTtvQwYVNV4w27Q+WPWulAkI/+RLFARjJhnRFE7uigGAkCeny7HNyL7u7wIDAQAB">
+                   em:updateURL="http://servfire.net/ocaumenu/ocaumenu-update.php"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDE+SDv1CbSXeHv+SQneNdc2TVuNvp9tkQ6jkcIdzT51KQf4+qU8Tmg3VF76g37IIMV4zcoMM8Z/1g9Kyg9q0h92xeAsYdm+G205IOKkdMF6ctEvpwkbCZ0DXM6drRb5puY00TQ8KUk5tSUtIcyy80IgQPz9xBN5+auqup7TZY4CQIDAQAB">
     <em:targetApplication RDF:resource="rdf:#$7z9Ul2"/>
     <em:file RDF:resource="urn:mozilla:extension:file:"/>
   </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:file:"
-                   em:package="content/" />
   <RDF:Description RDF:about="rdf:#$7z9Ul2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0"
                    em:maxVersion="10.*" />
+  <RDF:Description RDF:about="urn:mozilla:extension:file:"
+                   em:package="content/" />
 </RDF:RDF>
