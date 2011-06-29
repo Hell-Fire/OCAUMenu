@@ -129,7 +129,7 @@ var OCAUMenu = {
 	doHTTPRequest: function() {
 		OCAUMenu.log("Sending HTTP Request");
 		this.request = new XMLHttpRequest();
-		this.request.open('GET', this.forum + 'index.php?styleid=1', true);
+		this.request.open('GET', this.forum + 'index.php', true);
 		this.request.onreadystatechange = OCAUMenu.updateMenu;
 		this.request.send();
 		this.initialized = true;
