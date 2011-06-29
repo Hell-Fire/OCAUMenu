@@ -17,6 +17,6 @@
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0"
                    em:maxVersion="10.*"
-                   em:updateLink="http://servfire.net/ocau/ocaumenu-1.0.1.xpi"
+                   em:updateLink="http://servfire.net/ocaumenu/ocaumenu-1.0.1.xpi"
                    em:updateHash="sha1:BF9D0C0D1D176CFBD3616D06AFE19F2A8F94DCA4" />
 </RDF:RDF>
