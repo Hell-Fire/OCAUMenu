@@ -3,16 +3,16 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="rdf:#$bVpZO"
-                   em:version="0.1.0.8">
+                   em:version="1.0.1">
     <em:targetApplication RDF:resource="rdf:#$eVpZO"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:menu@overclockers.com.au"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAIYB84wdCTI8E/czozBNFTP+5rrQtwKFkuEx8Vy3ixd79RrJTyHHy3KsFii3fYa1dWDFIC3xqYS8kd6FbwNDIOrYu1cNZ72dtAtqwYnyctCdiMDP2BbmX7ODVH31Zgdmj4LCDSaTGKOCqG64d4ZIDZw4G9eJiQPXpPp7qYnTvjmY">
+    <em:updates RDF:resource="rdf:#$aVpZO"/>
   </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$aVpZO">
     <RDF:li RDF:resource="rdf:#$bVpZO"/>
   </RDF:Seq>
-  <RDF:Description RDF:about="urn:mozilla:extension:menu@overclockers.com.au"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADaBqNWoA77IrrQ76anBK6cwa1CIa8md4kxrX0p6PjoUwCV86tgyuWRClibJYhm0atZao6GUDUpgDqlFpHYP69mDKQzFwKLxt3XPW+/KOI1c0p5qIWD96S2edICgnD5FfNQc7LoNd/PIm3CA5yn+kD5M57RyABNv5GWws8W6uDw+">
-    <em:updates RDF:resource="rdf:#$aVpZO"/>
-  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$eVpZO"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0"
