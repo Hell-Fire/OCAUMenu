@@ -2,21 +2,21 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$bVpZO"
-                   em:version="1.0.1">
-    <em:targetApplication RDF:resource="rdf:#$eVpZO"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:menu@overclockers.com.au"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAIYB84wdCTI8E/czozBNFTP+5rrQtwKFkuEx8Vy3ixd79RrJTyHHy3KsFii3fYa1dWDFIC3xqYS8kd6FbwNDIOrYu1cNZ72dtAtqwYnyctCdiMDP2BbmX7ODVH31Zgdmj4LCDSaTGKOCqG64d4ZIDZw4G9eJiQPXpPp7qYnTvjmY">
-    <em:updates RDF:resource="rdf:#$aVpZO"/>
-  </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$aVpZO">
     <RDF:li RDF:resource="rdf:#$bVpZO"/>
   </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:menu@overclockers.com.au"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAC6bOojAI9XVNkwBntRKvmj/ATJcy/BpVnis3Jazahnd3EslE3kp4k/M2dKitHxYon3LMh1OjLrk2LlLom/SFrhwksFC4tbxGmzVtxxgjyO46MqJxiy0+HPoFR3985x8XtVLBlIGRsD0M63nGFODDT9lIiu5HTEx3q4Wto+J3+fr">
+    <em:updates RDF:resource="rdf:#$aVpZO"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$bVpZO"
+                   em:version="1.0.2">
+    <em:targetApplication RDF:resource="rdf:#$eVpZO"/>
+  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$eVpZO"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0"
                    em:maxVersion="10.*"
-                   em:updateLink="http://servfire.net/ocaumenu/ocaumenu-1.0.1.xpi"
+                   em:updateLink="http://servfire.net/ocaumenu/ocaumenu-1.0.2.xpi"
                    em:updateHash="sha1:BF9D0C0D1D176CFBD3616D06AFE19F2A8F94DCA4" />
 </RDF:RDF>
