@@ -181,7 +181,7 @@ var OCAUMenu = {
 						if (!cur[2]) { // Is a category (doesn't have <strong> tag
 							if (category) { // We had a category
 								if (forum) { // And a forum in the category
-									category.push(forum);
+									category.sub.push(forum);
 									forum = null;	
 								}
 								newForums.push(category); 
