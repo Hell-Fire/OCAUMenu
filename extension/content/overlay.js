@@ -2,6 +2,8 @@ Components.utils.import("resource://gre/modules/FileUtils.jsm");
 Components.utils.import("resource://gre/modules/NetUtil.jsm");
 
 var OCAUMenu = {
+		
+	pluginVersion: 102, // Only really used for the cache file version
 
 	url: "http://www.overclockers.com.au/",
 	forum: "http://forums.overclockers.com.au/",
@@ -111,15 +113,17 @@ var OCAUMenu = {
 			var data = JSON.parse(NetUtil.readInputStreamToString(inputStream, inputStream.available()));
 			if (data) {
 				OCAUMenu.log("File loaded okay");
-				data.lastUpdated = new Date(data.lastUpdated);
-				var aWeekAgo = new Date();
-				aWeekAgo.setDate(aWeekAgo.getDate()-7);
-				if (data.lastUpdated > aWeekAgo) {
-					OCAUMenu.log("Using data from file");
-					OCAUMenu.forums = data.forums;
-					OCAUMenu.setupMenus.apply(OCAUMenu);
-					OCAUMenu.initialized = true;
-					return;
+				if (data.version && data.version == OCAUMenu.pluginVersion) { // Don't load if the cache version is different
+					data.lastUpdated = new Date(data.lastUpdated);
+					var aWeekAgo = new Date();
+					aWeekAgo.setDate(aWeekAgo.getDate()-7);
+					if (data.lastUpdated > aWeekAgo) {
+						OCAUMenu.log("Using data from file");
+						OCAUMenu.forums = data.forums;
+						OCAUMenu.setupMenus.apply(OCAUMenu);
+						OCAUMenu.initialized = true;
+						return;
+					}
 				}
 			}
 		}
@@ -175,7 +179,13 @@ var OCAUMenu = {
 						var name = cur[3].replace(/&amp;/gi, "&");
 						var number = cur[1];
 						if (!cur[2]) { // Is a category (doesn't have <strong> tag
-							if (category) { newForums.push(category); }
+							if (category) { // We had a category
+								if (forum) { // And a forum in the category
+									category.push(forum);
+									forum = null;	
+								}
+								newForums.push(category); 
+							}
 							category = { name: name, number: number };
 						} else { // Is a forum
 							if (typeof(category.sub) == "undefined") { category.sub = new Array(); }
@@ -208,7 +218,7 @@ var OCAUMenu = {
 			try {
 				OCAUMenu.log("Writing to cache");
 				var now = new Date();
-				OCAUMenu.writeFile(OCAUMenu.cacheFile, JSON.stringify({ forums: OCAUMenu.forums, lastUpdated: now.getTime() }));
+				OCAUMenu.writeFile(OCAUMenu.cacheFile, JSON.stringify({ forums: OCAUMenu.forums, lastUpdated: now.getTime(), version: OCAUMenu.pluginVersion }));
 			} catch (e) {
 				OCAUMenu.log("Couldn't write to file: " + e.name + " - " + e.message);
 			}
